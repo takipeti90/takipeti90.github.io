@@ -16,7 +16,7 @@
             const APP_NAME = "Currency Converter and Rates";
             const APP_VERSION = "1.0";
             const COMPANY = "Peter Takacs";
-            const DATE = "2023-06-06";
+            const DATE = "06-06-2023";
             const HOUSE_NUMBER = "28";
             const STREET = "Honfoglalas utca";
             const CITY = "Gyor";
@@ -28,14 +28,12 @@
             // Insert constants into HTML
             document.addEventListener("DOMContentLoaded", function() {
                 document.getElementById("appName").textContent = APP_NAME;
-                document.getElementById("appName1").textContent = APP_NAME;
             	document.getElementById("appVersion").textContent = APP_VERSION;
-                document.getElementById("appVersion1").textContent = APP_VERSION;
+                document.getElementById("company").textContent = COMPANY;
                 document.getElementById("date").textContent = DATE;
                 document.getElementById("houseNumber").textContent = HOUSE_NUMBER;
                 document.getElementById("street").textContent = STREET;
                 document.getElementById("city").textContent = CITY;
-                document.getElementById("state").textContent = STATE;
                 document.getElementById("country").textContent = COUNTRY;
                 document.getElementById("zipCode").textContent = ZIP_CODE;
                 document.getElementById("email").textContent = EMAIL;
@@ -194,12 +192,11 @@
         <p><strong>Contacting Us</strong></p>
         <p><span style="font-weight: 400;">If there are any questions regarding this privacy policy, you may contact us using the information below.</span></p>
         <p>&nbsp;</p>
-        <p><span style="font-weight: 400;" id="appName1"></span> <span style="font-weight: 400;" id="appVersion1"></span></p>
-        <p><span style="font-weight: 400;" id="street"></span> <span style="font-weight: 400;" id="houseNumber"></span>.</p>
-        <p><span style="font-weight: 400;" id="state"></span>, <span style="font-weight: 400;" id="city"></span> <span style="font-weight: 400;" id="zipCode"></span></p>
-        <p><span style="font-weight: 400;" id="country"></span></p>
+        <p><span style="font-weight: 400;" id="company"></span></p>
+        <p><span style="font-weight: 400;" id="country"></span>, <span style="font-weight: 400;" id="zipCode"></span> <span style="font-weight: 400;" id="city"></span></p>
+        <p><span style="font-weight: 400;" id="street"></span> <span style="font-weight: 400;" id="houseNumber"></span></p>
         <p><span style="font-weight: 400;" id="email"></span></p>
         <p>&nbsp;</p>
-        <p>Last Edited on <span id="date"></span></p>
+        <p>Last edited on <span id="date"></span></p>
     </body>
 </html>
