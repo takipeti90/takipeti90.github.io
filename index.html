@@ -1,81 +1,43 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generation-date" content="06.04.2023 16:44:59">
   <title>Currency Converter and Rates</title>
-  <style>
-    body {
-      background-color: #282828;
-      color: white;
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size: 16px;
-      line-height: 1.5em;
-      margin: 0;
-      padding: 10px
-    }
-
-    a {
-      color: #f9e9b1;
-      text-decoration: none
-    }
-
-    a:hover {
-      color: #fff
-    }
-
-    h1 {
-      font-size: 25px;
-      padding: 20px
-    }
-
-    h2 {
-      font-size: 18px
-    }
-
-    .center {
-      text-align: center
-    }
-
-    img.logo {
-      display: block;
-      margin: 0 auto;
-      width: 150px;
-      height: 150px;
-      border-radius: 30px;
-      box-shadow: 0 0 5px rgb(0 0 0 / 40%)
-    }
-
-    img.mockups {
-      display: block;
-      margin: 0 auto;
-      width: 295px;
-      height: 639px;
-      margin-bottom: 10px;
-      border-radius: 30px;
-      box-shadow: 0 0 5px rgb(0 0 0 / 40%)
-    }
-
-    a.support {
-      font-size: 14px;
-      color: #ccc
-    }
-  </style>
-  <link href="images/favicon.png" rel="icon" type="image/x-icon">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/appicon180.png">
+  <link rel="stylesheet" href="/style/style.css">
 </head>
 <body>
-  <div class="center">
-    <h1>Currency Converter and Rates</h1>
-    <img class="logo" src="images/favicon.png">
-    <p>
-      <a href="https://apps.apple.com/app/currency-converter-and-rates/id6448806360?platform=iphone">iPhone</a> | <a href="https://apps.apple.com/app/currency-converter-and-rates/id6448806360?platform=ipad">iPad</a> | <a href="https://apps.apple.com/app/currency-converter-and-rates/id6448806360?platform=ipad">Mac</a>
-    </p>
-    <p> ⭐ <a href="https://apps.apple.com/app/currency-converter-and-rates/id6448806360?action=write-review">Rate the App in the App Store</a>
-    </p>
-    <img class="mockups" src="images/convert.png">
-    <p>
-      <a class="support" href="mailto:petertakacs.app@gmail.com?subject=[Currency HELP]"> petertakacs.app@gmail.com </a>
-    </p>
+  <div class="main">
+    <div class="logo">
+      <a href="https://apps.apple.com/app/currency-converter-and-rates/id6448806360"><img src="images/favicon.png"></a>
+      <div class="logoText">
+        <h1>CURRENCY CONVERTER AND RATES<br><span>by Peter Takacs</span></h1>
+      </div>
+    </div>
+
+    <div class="content">
+      <h1>Travel smarter,<br>invest wiser!</h1>
+      <p>Experience currency conversion made easy.
+        Travel smarter with<br>offline capabilities, set your own rates, 
+        and enjoy lightning-fast<br>conversions with our handy calculator.</p>
+      <div class="appstore">
+        <a href="https://apps.apple.com/app/currency-converter-and-rates/id6448806360"><img src="images/appstore.svg" alt="Download App"></a>
+      </div>
+      <div class="icons">
+        <a class="mail" href="mailto:petertakacs.app@gmail.com?subject=[Support] - Currency Converter and Rates"><ion-icon name="mail"></ion-icon></a>
+        <a class="star" href="https://apps.apple.com/app/currency-converter-and-rates/id6448806360?action=write-review"><ion-icon name="star"></ion-icon></a>
+        <!--
+        <a class="facebook" href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a class="instagram" href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a class="twitter" href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a class="tiktok" href="#"><ion-icon name="logo-tiktok"></ion-icon></a>
+        <a class="discord" href="#"><ion-icon name="logo-discord"></ion-icon></a>
+        <a class="snapchat" href="#"><ion-icon name="logo-snapchat"></ion-icon></a>
+        -->
+      </div>
+      <div class="mockup">
+        <a href="https://apps.apple.com/app/currency-converter-and-rates/id6448806360"><img class="mockup" src="images/convert.png" alt="Download App"></a>
+      </div>
+    </div>
   </div>
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
+</html>
