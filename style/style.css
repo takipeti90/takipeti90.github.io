@@ -15,7 +15,7 @@ body{
     color: #2b2b2b;
     position: relative;
     padding-left: 20px;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
     /*border: 2px solid black*/
 }
 
@@ -103,8 +103,8 @@ body{
 .icons a{
     text-decoration: none;
     color: black;
-    font-size: 40px;
-    padding-right: 15px;
+    font-size: 30px;
+    padding-right: 10px;
 }
 
 .icons a.star{
@@ -130,6 +130,48 @@ body{
     border-radius: 30px;
 }
 
+.footerBox{
+    width: 100%;
+    height: 40px;
+    background-color: #292929;
+}
+
+.footer{
+    position: relative;
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.footer .footerElements{
+    position: relative;
+    float: left;
+    width: calc(400px - 10px);  
+    border:1px solid red;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.footerElements a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.footerElements span{
+    font-size: 12px;
+}
+
+.footerElements a.mail{
+    font-size: 25px;
+    color: #ffffff;
+}
+
 @media screen and (max-width: 1200px) {
     /*Normal Screen*/
     .main{
@@ -151,9 +193,9 @@ body{
         letter-spacing: 1px;
     }
     .content h1{
-        font-size: 5vw;
+        font-size: 5.5vw;
         letter-spacing: 1.5px;
-        line-height: 70px;
+        line-height: 75px;
     }
     .content p{
         width: 90%;
@@ -162,44 +204,156 @@ body{
         line-height: 35px;
     }
     .appstore img{
-        height: 5.5vw;
+        height: 5.8vw;
         transition: 1s ease;
     }
     .icons a{
-        font-size: 3.3vw;
-    }
-}
-
-@media screen and (max-width: 1190px) {
-    /*Mockup*/
-    .main{
-        padding-left: 20px;
-        height: 150vh;
+        font-size: 2.5vw;
     }
     .mockup{
-        position: absolute;
-        top: 420px;
-        left: 70px;
-        height: 750px;
-        border-radius: 30px;
+        left: 65%;
     }
 }
 
-@media screen and (max-width: 1024px) {
-    /*Tablet 1024*/
+@media screen and (max-width: 1080px) {
+    /*Mockup smaller*/
+    .content h1{
+        font-size: 5.5vw;
+        letter-spacing: 1.5px;
+        line-height: 75px;
+    }
+    .content p{
+        width: 90%;
+        font-size: 1.8vw;
+        letter-spacing: 1.3px;
+        line-height: 35px;
+    }
+    .appstore img{
+        height: 6.5vw;
+        transition: 1s ease;
+    }
+    .icons a{
+        font-size: 3vw;
+        padding-right: 8px;
+    }
+    .mockup{
+        height: 86%;
+    }
+}
 
+@media screen and (max-width: 950px) {
+    /*Mockup down*/
+    .main{
+        padding-left: 20px;
+        height: 130vh;
+    }
+    .logo img{
+        width: 5.8vw;
+    }
+    .content h1{
+        font-size: 7.5vw;
+        letter-spacing: 1.5px;
+        line-height: 80px;
+    }
+    .content p{
+        width: 90%;
+        font-size: 2.6vw;
+        letter-spacing: 1.3px;
+        line-height: 35px;
+    }
+    .appstore img{
+        height: 6.8vw;
+        transition: 1s ease;
+    }
+    .icons a{
+        font-size: 3vw;
+        padding-right: 8px;
+    }
+    .mockup{
+        top: 420px;
+        left: 120px;
+        height: 750px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    /*Ipad-Mobile*/
+    .content h1{
+        font-size: 7.9vw;
+        line-height: 80px;
+    }
+    .appstore img{
+        height: 7.5vw;
+    }
+    .icons{
+        padding-top: 50px;
+    }
+    .mockup{
+        left: 90px;
+    }
 }
 
 @media screen and (max-width: 768px) {
     /*Ipad*/
-    
+    .logo{
+        padding-top: 80px;
+    }
+    .logo img{
+        width: 6.5vw;
+    }
+    .logo h1{
+        font-size: 2vw;
+        letter-spacing: 1px;
+    }
+    .logo span{
+        font-size: 1.8vw;
+        letter-spacing: 1px;
+    }
+    .content h1{
+        font-size: 8.2vw;
+        line-height: 80px;
+    }
+    .appstore img{
+        height: 7.8vw;
+    }
+    .icons{
+        padding-top: 50px;
+    }
+    .icons a{
+        font-size: 3vw;
+        padding-right: 8px;
+    }
+    .mockup{
+        top: 420px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    /*Ipad-Mobile*/
+    .content h1{
+        font-size: 9vw;
+        line-height: 70px;
+    }
+    .content p{
+        font-size: 2.6vw;
+        letter-spacing: 1.3px;
+        line-height: 35px;
+    }
 }
 
 @media screen and (max-width: 480px) {
-    /*Mobile 768*/
-    
+    /*Mobile*/
+    .content h1{
+        font-size: 40vw;
+    }
 }
 
+@media screen and (max-width: 320px) {
+    /*Mobile*/
+    .content h1{
+        font-size: 40vw;
+    }
+}
 
 /*
     320px — 480px: Mobile devices
