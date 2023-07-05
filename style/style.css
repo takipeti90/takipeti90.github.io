@@ -337,6 +337,24 @@ body{
 
 @media screen and (max-width: 630px) {
     /*Ipad-Mobile*/
+    .main{
+        width: 100%;
+        margin-left: 10px;
+    }
+    .logo{
+        padding-top: 60px;
+    }
+    .logo img{
+        width: 7vw;
+    }
+    .logo h1{
+        font-size: 2.2vw;
+        letter-spacing: 1px;
+    }
+    .logo span{
+        font-size: 2vw;
+        letter-spacing: 1px;
+    }
     .content h1{
         font-size: 9vw;
         line-height: 70px;
@@ -353,39 +371,139 @@ body{
     }
     .mockup{
         left: 50px;
-        top: 400px;
+        top: 380px;
     }
 }
 
 @media screen and (max-width: 540px) {
     /*Mobile*/
+    .main{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .logo{
+        padding-top: 50px;
+    }
+    .logo img{
+        width: 7.5vw;
+    }
     .content h1{
         line-height: 65px;
+        margin-top: 6%;
     }
     .content p{
-        font-size: 2.8vw;
-        line-height: 35px;
+        width: 90%;
+        font-size: 4vw;
+        line-height: 40px;
+        padding-bottom: 50px;
+    }
+    .linebreak{
+        display: none;
+    }
+    .appstore img{
+        height: 10vw;
+    }
+    .icons{
+        padding-top: 50px;
+    }
+    .icons a{
+        font-size: 4.5vw;
+    }
+    .mockup{
+        left: 50px;
+        top: 360px;
     }
 }
 
 @media screen and (max-width: 480px) {
     /*Mobile*/
+    .logo{
+        padding-top: 30px;
+    }
+    .logo img{
+        width: 9vw;
+    }
+    .logo h1{
+        font-size: 2.3vw;
+        letter-spacing: 1px;
+    }
+    .logo span{
+        font-size: 2.1vw;
+        letter-spacing: 1px;
+    }
     .content h1{
-        font-size: 40vw;
+        font-size: 9.5vw;
+        line-height: 55px;
+    }
+    .appstore img{
+        height: 12vw;
+    }
+    .icons{
+        padding-top: 50px;
+    }
+    .icons a{
+        font-size: 5.5vw;
+    }
+    .mockup{
+        left: 30px;
+        top: 350px;
+        height: 160vw;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    /*Mobile*/
+    .logo img{
+        width: 10vw;
+    }
+    .logo h1{
+        font-size: 2.5vw;
+        letter-spacing: 1px;
+    }
+    .logo span{
+        font-size: 2.3vw;
+        letter-spacing: 1px;
+    }
+    .content h1{
+        font-size: 10vw;
+        line-height: 50px;
+        letter-spacing: 0.8px;
+    }
+    .content p{
+        font-size: 4.4vw;
+        line-height: 35px;
+        letter-spacing: 0.9px;
+        padding-top: 50px;
+    }
+    .appstore img{
+        height: 14vw;
+    }
+    .icons{
+        padding-top: 40px;
+    }
+    .icons a{
+        font-size: 6vw;
+    }
+    .mockup{
+        left: 25px;
+        top: 340px;
     }
 }
 
 @media screen and (max-width: 320px) {
     /*Mobile*/
     .content h1{
-        font-size: 40vw;
+        line-height: 45px;
+    }
+    .appstore img{
+        height: 15vw;
+    }
+    .icons a{
+        font-size: 6.5vw;
+        padding-right: 6px;
+    }
+    .mockup{
+        left: 22px;
+        top: 320px;
     }
 }
-
-/*
-    320px — 480px: Mobile devices
-    481px — 768px: iPads, Tablets
-    769px — 1024px: Small screens, laptops
-    1025px — 1200px: Desktops, large screens
-    1201px and more —  Extra large screens, TV
-*/
