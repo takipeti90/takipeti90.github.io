@@ -259,15 +259,14 @@ body{
         width: 90%;
         font-size: 2.6vw;
         letter-spacing: 1.3px;
-        line-height: 35px;
+        line-height: 38px;
     }
     .appstore img{
         height: 6.8vw;
         transition: 1s ease;
     }
     .icons a{
-        font-size: 3vw;
-        padding-right: 8px;
+        font-size: 3.1vw;
     }
     .mockup{
         top: 420px;
@@ -282,11 +281,18 @@ body{
         font-size: 7.9vw;
         line-height: 80px;
     }
+    .content p{
+        font-size: 2.8vw;
+        line-height: 43px;
+    }
     .appstore img{
         height: 7.5vw;
     }
     .icons{
         padding-top: 50px;
+    }
+    .icons a{
+        font-size: 3.3vw;
     }
     .mockup{
         left: 90px;
@@ -311,20 +317,21 @@ body{
     }
     .content h1{
         font-size: 8.2vw;
-        line-height: 80px;
+        line-height: 70px;
+    }
+    .content p{
+        font-size: 2.7vw;
+        line-height: 40px;
     }
     .appstore img{
-        height: 7.8vw;
+        height: 8vw;
     }
     .icons{
         padding-top: 50px;
     }
     .icons a{
-        font-size: 3vw;
+        font-size: 3.5vw;
         padding-right: 8px;
-    }
-    .mockup{
-        top: 420px;
     }
 }
 
@@ -336,7 +343,27 @@ body{
     }
     .content p{
         font-size: 2.6vw;
-        letter-spacing: 1.3px;
+        line-height: 40px;
+    }
+    .appstore img{
+        height: 8.5vw;
+    }
+    .icons a{
+        font-size: 3.8vw;
+    }
+    .mockup{
+        left: 50px;
+        top: 400px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    /*Mobile*/
+    .content h1{
+        line-height: 65px;
+    }
+    .content p{
+        font-size: 2.8vw;
         line-height: 35px;
     }
 }
