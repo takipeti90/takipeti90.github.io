@@ -14,13 +14,13 @@ body{
     margin: auto;
     color: #2b2b2b;
     position: relative;
-    padding-left: 20px;
     padding-bottom: 80px;
     /*border: 2px solid black*/
 }
 
 .logo{
     height: 60px;
+    padding-left: 40px;
     padding-top: 100px;
 }
 
@@ -56,6 +56,10 @@ body{
     font-weight: 100;
     letter-spacing: 1px;
     padding-top: 6px;
+}
+
+.content{
+    padding-left: 40px;
 }
 
 .content h1{
@@ -176,7 +180,6 @@ body{
     /*Normal Screen*/
     .main{
         width: 100%;
-        margin-left: 20px;
     }
     .logo{
         padding-top: 80px;
@@ -212,6 +215,8 @@ body{
     }
     .mockup{
         left: 65%;
+        top: 50px;
+
     }
 }
 
@@ -223,7 +228,7 @@ body{
         line-height: 75px;
     }
     .content p{
-        width: 90%;
+        width: 100%;
         font-size: 1.8vw;
         letter-spacing: 1.3px;
         line-height: 35px;
@@ -244,7 +249,6 @@ body{
 @media screen and (max-width: 950px) {
     /*Mockup down*/
     .main{
-        padding-left: 20px;
         height: 130vh;
     }
     .logo img{
@@ -256,7 +260,7 @@ body{
         line-height: 80px;
     }
     .content p{
-        width: 90%;
+        width: 100%;
         font-size: 2.6vw;
         letter-spacing: 1.3px;
         line-height: 38px;
@@ -295,7 +299,7 @@ body{
         font-size: 3.3vw;
     }
     .mockup{
-        left: 90px;
+        left: 120px;
     }
 }
 
@@ -332,6 +336,10 @@ body{
     .icons a{
         font-size: 3.5vw;
         padding-right: 8px;
+    }
+    .mockup{
+        top: 400px;
+        left: 80px;
     }
 }
 
@@ -408,10 +416,6 @@ body{
     }
     .icons a{
         font-size: 4.5vw;
-    }
-    .mockup{
-        left: 50px;
-        top: 360px;
     }
 }
 
@@ -504,6 +508,6 @@ body{
     }
     .mockup{
         left: 22px;
-        top: 320px;
+        top: 330px;
     }
 }
