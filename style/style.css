@@ -18,44 +18,99 @@ body{
     /*border: 2px solid black*/
 }
 
+.header {
+    position: relative;
+    height: 300px;
+  }
+  
+  .image-carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel img {
+    height: 100px;
+    width: auto;
+    max-width: 300px;
+  }
+  
+  .carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .carousel-image.active {
+    opacity: 1;
+  }
+  
+  /* Optional: Add navigation buttons */
+  .carousel-nav {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .carousel-nav button {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .carousel-nav button.active {
+    background-color: #666;
+  }
+
 .logo{
+    display: flex;
+    align-items: center;
     height: 60px;
     padding-left: 40px;
     padding-top: 100px;
 }
 
 .logo img{
-    float: left;
     width: 60px;
     padding-right: 10px;
 }
 
 .logoText{
-    display: table;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .logoText h1{
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
     color: #2b2b2b;
     font-family: Arial;
     font-size: 20px;
     font-weight: 900;
     letter-spacing: 1px;
+    margin: 0;
 }
 
 .logoText span{
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
     color: #2b2b2b;
     font-family: Arial;
     font-size: 18px;
     font-weight: 100;
     letter-spacing: 1px;
     padding-top: 6px;
+    margin: 0;
 }
 
 .content{
@@ -135,31 +190,37 @@ body{
 }
 
 .footerBox{
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 40px;
     background-color: #292929;
 }
 
 .footer{
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
     width: 1200px;
-    height: 100%;
     margin: 0 auto;
+    height: 100%;
+    border:1px solid red;
 }
 
-.footer .footerElements{
-    position: relative;
-    float: left;
-    width: calc(400px - 10px);  
+.footerElements{
+    flex: 1;
+    width: calc(100% / 3);
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     border:1px solid red;
-    text-decoration: none;
-    color: #ffffff;
-    font-family: Arial;
-    font-size: 12px;
-    font-weight: 600;
 }
 
 .footerElements a{
+    margin-right: 10px;
+    color: #2b2b2b;
     text-decoration: none;
     color: #ffffff;
     font-family: Arial;
@@ -167,8 +228,15 @@ body{
     font-weight: 600;
 }
 
-.footerElements span{
+.footerElements p{
+    margin: 0;
+    color: #ffffff;
     font-size: 12px;
+}
+
+.footerElements ion-icon{
+    vertical-align: middle;
+    margin-right: 5px;
 }
 
 .footerElements a.mail{
